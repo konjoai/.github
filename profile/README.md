@@ -2,6 +2,8 @@
 
 **Make it Konjo — build, ship, repeat.**
 
+![image (42)](https://github.com/user-attachments/assets/fd55d13d-f747-447f-a979-34b3734c9d76)
+
 We build the open infrastructure layer for AI. The tools, runtimes, registries, and memory systems that practitioners actually need — and that nobody else is building.
 
 ---
