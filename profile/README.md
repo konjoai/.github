@@ -1,48 +1,83 @@
-# Konjo AI
+# ቆንጆ Konjo AI
 
 **Make it Konjo — build, ship, rest, repeat.**
 
 ![image (42)](https://github.com/user-attachments/assets/fd55d13d-f747-447f-a979-34b3734c9d76)
 
-We build the open infrastructure layer for AI. The tools, runtimes, registries, and memory systems that practitioners actually need — and that nobody else is building.
+> **Konjo** - **ቆንጆ** — Beautiful. **根性** — Fighting spirit. **康宙** — Health of the universe. **खोजो** — Search and discover.
+> *Make it konjo — build, ship, rest, repeat.*
+
+Konjo is the kind of word you use when a tool does exactly what it needs to do, nothing more, and nothing less.
+
+We build the open infrastructure layer for AI. Not wrappers, not prompt chains, but the deep systems that power them: compression, inference optimization, vector engines, and compliance layers. We are building a vertically integrated LLM stack from scratch.
 
 ---
 
-## What We're Building
+## 🏗️ The Architecture
 
-| Project | What It Is | Status |
-|---------|-----------|--------|
-| [**Squish**](https://github.com/wesleyscholl/squish) | LLM compression + inference optimization for Apple silicon | 🟡 Active |
-| [**model-bench**](#) | Extendable CLI for benchmarking local models | 🔵 Planning |
-| [**SkillForge**](#) | Open, cross-agent skills registry — the npm for AI agents | 🔵 Planning |
-| [**membank**](#) | Tiered memory architecture for LLM agents | 🟡 Research |
-| [**speculate**](#) | Speculative decoding playground, paired with Squish | 🔵 Planning |
-| [**kv-prune**](#) | KV cache compression research tooling | 🟡 Research |
-| [**promptgit**](#) | Version control for prompts — git semantics, eval-aware | 🔵 Planning |
-| [**llm-pack**](#) | Bundle a model + app into a single portable executable | 🔵 Planning |
+We approach AI infrastructure as a layered operating system. Everything is modular, benchmark-driven, and designed to plug into the core orchestration runtime.
 
----
+  * **Orchestration:** `konjo-runtime`
+  * **Components:** `vectro` (Retrieval) + `squish` (Inference)
+  * **Compliance:** `squash` (Policy & Audit)
+  * **Research Foundation:** `drex` (Architecture)
 
-## Why Konjo
+-----
 
-*Konjo* (ቆንጆ) is Amharic for beautiful — elegant, good, wonderful, right. The kind of word you use when something lands exactly as it should. We've found echoes of the same idea in more than 30 languages.
+## 📦 Active Projects
 
-We use it because it's what we're aiming for: tools that are genuinely well-made. Infrastructure that does exactly what you need it to do, nothing more. Open source that respects the people who use it.
+### [KonjoOS](https://www.google.com/search?q=https://github.com/konjoai/KonjoOS)
 
-AI infrastructure is being built right now, by a small number of people, mostly in isolation. We think it should be built in the open, by a community of people who actually use what they build — fast, pragmatically, and with care.
+**The AI Orchestration Runtime**
+The central spine of the Konjo AI stack. It is not just a RAG application; it is a modular AI system runtime capable of hybrid retrieval, query routing, execution, and telemetry.
 
-That's Konjo AI.
+  * **Capabilities:** Dense + BM25 + RRF hybrid retrieval, HyDE, ColBERT late interaction, and real-time RAGAS evaluation.
+  * **Stack:** Python, FastAPI, Docker, Qdrant.
 
----
+### [vectro](https://www.google.com/search?q=https://github.com/konjoai/vectro)
 
-## Our Stack
+**High-Performance Embedding Compression & ANN Index**
+A blazingly fast vector system that absorbs the complexity of advanced quantization. It currently outperforms FAISS by 4.85× in local benchmarks.
 
-We build primarily in **Rust** and **Python**, with **C++** where the metal demands it. We care about:
+  * **Capabilities:** Sub-1ms encode, HNSW (recall@10=0.920), NF4/INT8/PQ quantization, AutoQuantize, pipeline CLI.
+  * **Stack:** Rust CLI, Mojo hot-path, Python API, WASM bindings.
 
-- CLI-first, pipe-friendly tools that play well with existing workflows
-- Real benchmark numbers, not vibes
-- Open formats and open specs — no lock-in
-- Shipping fast and iterating in public
+### [drex](https://www.google.com/search?q=https://github.com/konjoai/drex)
+
+**Hybrid Neural Architecture Research**
+The research foundation of Konjo AI. DREX is an exploration into building highly efficient, next-generation language models without relying solely on standard Transformers.
+
+  * **Architecture:** Mamba SSM + ESN reservoir + HDC encoding + NoProp memory + RL controller + KAN readout.
+  * **Status:** Phase 1 complete (125M config ready), Sprint 5 active.
+
+### [squish](https://github.com/squishai/squish) & squash
+
+**Inference, Quantization, and Compliance Layer**
+*(Maintained under our partner org, Squish AI)*
+Squish handles local model serving, INT3/INT4/AQLM quantization, semantic caching, and speculative decoding. It is tightly coupled with **Squash**, our enterprise AI compliance layer.
+
+  * **Squash Capabilities:** CycloneDX/SPDX generation, EU AI Act policy engine, VEX feed multi-tenant SaaS, and CI/CD integration (Argo, Jenkins, GitHub Actions).
+
+-----
+
+## 🔮 The Roadmap (Q3/Q4 2026)
+
+These supporting components are currently being built inside `konjo-runtime` and will be extracted into standalone infrastructure primitives once their APIs are stabilized:
+
+  * **`membank`**: A multi-tiered memory architecture (L1 context, L2 vector, L3 semantic/episodic) directly inspired by DREX research.
+  * **`evalkit`**: A central evaluation framework for tracking inference latency, retrieval accuracy, and generation faithfulness.
+  * **`nanotune`**: A localized fine-tuning loop designed to optimize small models specifically for the `konjo-runtime` orchestration layer.
+
+-----
+
+## 🛠️ Our Engineering Principles
+
+We build primarily in **Rust** and **Python**, integrating **Mojo** and **C++** where the metal demands it.
+
+1.  **CLI-first, pipe-friendly:** Tools must play seamlessly with existing Unix workflows and CI/CD pipelines.
+2.  **Show the math:** Real benchmark numbers over vibes. Latency (p50/p95/p99) and accuracy are measured constantly.
+3.  **Open specs, zero lock-in:** We build on open formats. If you want to swap out a Konjo layer for a different tool, the system allows it.
+4.  **Ship fast, iterate in public:** Ugly v1s are better than perfect local branches.
 
 ---
 
