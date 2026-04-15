@@ -1,6 +1,6 @@
 # Konjo AI
 
-**Make it Konjo — build, ship, repeat.**
+**Make it Konjo — build, ship, rest, repeat.**
 
 ![image (42)](https://github.com/user-attachments/assets/fd55d13d-f747-447f-a979-34b3734c9d76)
 
