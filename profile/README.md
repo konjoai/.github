@@ -1,11 +1,13 @@
 # ቆንጆ Konjo AI
 
-**Make it Konjo — build, ship, rest, repeat.**
+**KONJO — Know, Outline, Nail, Justify, Optimize.**
+
+**The Konjo Way: Know the problem, outline the solution, nail the build, justify the claims, optimize the output.**
 
 ![image (42)](https://github.com/user-attachments/assets/fd55d13d-f747-447f-a979-34b3734c9d76)
 
 > **Konjo** - **ቆንጆ** — Beautiful. **根性** — Fighting spirit. **康宙** — Health of the universe. **खोजो** — Search and discover.
-> *Make it konjo — build, ship, rest, repeat.*
+> *Make it Konjo — Plan, build, test, ship, rest, repeat.*
 
 Konjo is the kind of word you use when a tool does exactly what it needs to do, nothing more, and nothing less.
 
