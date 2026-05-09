@@ -118,4 +118,4 @@ All Konjo AI projects are open source. Most are MIT licensed unless otherwise no
 
 ---
 
-*Konjo AI — Make it Konjo. Build, ship, rest, repeat.*
+*Konjo AI — Make it Konjo. Plan, build, test, ship, rest, repeat.*
