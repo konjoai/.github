@@ -113,6 +113,14 @@ Annex IV documentation, SBOMs (CycloneDX/SPDX), policy checks, and Sigstore-sign
 
 EU AI Act · NIST AI RMF · ISO 42001. One step in CI/CD. Pairs with squash.
 
+#### [homebrew-squash](https://github.com/konjoai/homebrew-squash) · Ruby
+
+**Homebrew tap for squash.**
+
+`brew install konjoai/squash/squash-ai` — the fastest path to EU AI Act compliance on macOS.
+
+`homebrew` `macos` `squash` `tap`
+
 ---
 
 ### Research
@@ -196,4 +204,4 @@ We're a small, focused team building in the open. If you've written a custom ben
 
 All Konjo AI projects are open source — most are MIT licensed unless otherwise noted. Build on them, fork them, ship them.
 
-*Just make it konjo.*
+*Make it Konjo — Plan, build, test, ship, rest, repeat.*
