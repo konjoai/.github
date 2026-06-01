@@ -18,18 +18,18 @@ We build the open infrastructure layer for AI. Not wrappers, not prompt chains �
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                        Orchestration                          │
+│                        Orchestration                         │
 │              lopi (Agent Orchestrator) · kyro (RAG)          │
 ├──────────────────────────────────────────────────────────────┤
-│                       Inference Layer                         │
+│                       Inference Layer                        │
 │            squish (Local LLMs) · kairu (Speculative)         │
 ├──────────────────────────────────────────────────────────────┤
-│                       Retrieval Layer                         │
+│                       Retrieval Layer                        │
 │             vectro (Vectors) · kohaku (Memory)               │
 ├──────────────────────────────────────────────────────────────┤
-│                  Research & Compliance                        │
-│    drex (Architecture) · toki (Robustness) · miru (XAI)     │
-│                    squash (EU AI Act)                         │
+│                  Research & Compliance                       │
+│    drex (Architecture) · toki (Robustness) · miru (XAI)      │
+│                    squash (EU AI Act)                        │
 └──────────────────────────────────────────────────────────────┘
 ```
 
